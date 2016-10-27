@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="bower_components/components-font-awesome/css/font-awesome.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="header" style="text-align: center">
+
+        <h3>This is request portal for performing cURL to Twitter API</h3>
+        <h5>GET friends/ids</h5>
+      </div>
+      <div class="row"></div>
+      <div class="content">
+        <div class="center-block">
+            <a href="index.html"><button id="singlebutton" name="singlebutton" class="btn btn-success center-block">
+                Back to Home <i class="fa fa-home" aria-hidden="true"></i>
+            </button></a>
+        </div>
+
+        <form class="form-inline" method="get" action="friendResult.php" id="myForm">
+          <div class="row" style="text-align:center">
+            <div class="form-group">
+
+                <select class="form-control" name="usedParam">
+                  <option value="user_id">User Id</option>
+                  <option value="screen_name">Screen Name</option>
+                </select>
+                <input type="text" class="form-control" name="valueParam" placeholder="*ex : 123 or fahrizalsept">
+
+
+            </div>
+          </div>
+          <div class="row" style="text-align:center;margin:50px">
+            <div class="form-group">
+              <button type="submit" class="btn btn-default">Submit</button>
+            </div>
+          </div>
+
+        </form>
+      </div>
+
+    </div>
+
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+  </body>
+
+</html>
